@@ -1,7 +1,6 @@
 import time
 
 import google.generativeai as genai
-from google.generativeai.types import TunedModelState
 
 name = 'generate-num-plus-one-002'
 

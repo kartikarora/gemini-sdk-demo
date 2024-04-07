@@ -4,8 +4,8 @@ import google.generativeai as genai
 from google.generativeai.types import TunedModelState
 
 base_model = [
-    m for m in genai.list_models()
-    if "createTunedModel" in m.supported_generation_methods][0]
+    model for model in genai.list_models()
+    if "createTunedModel" in model.supported_generation_methods][0]
 
 name = 'generate-num-plus-one-002'
 operation = genai.create_tuned_model(
